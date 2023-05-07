@@ -15,7 +15,7 @@
     --gray-10: #e6e6e6;
 
     /* Primary */
-    --primary: #007acc;
+    --primary: #3a386e;
     --primary-hover: #0071bd;
 
     --on-primary : #ffffff;
@@ -46,28 +46,23 @@
     --doc-height: 100%;
 
     /* header height */
-    --phone-header-height: 9%;
+    --phone-header-height: 7%;
     --tablet-header-height: 8%;
     --laptop-header-height: 7%;
     --desktop-header-height: 7%;
 
     --header-height: var(--phone-header-height);
-    
-    /* main height */
-    --phone-main-height: 91%;
-    --tablet-main-height: 92%;
-    --laptop-main-height: 90%;
-    --desktop-main-height: 90%;
-
-    --main-height: var(--phone-main-height);
 
     /* footer height */
-    --phone-footer-height: 0%;
-    --tablet-footer-height: 0%;
+    --phone-footer-height: 9%;
+    --tablet-footer-height: 9%;
     --laptop-footer-height: 3%;
     --desktop-footer-height: 3%;
 
     --footer-height: var(--phone-footer-height);
+    
+    /* main height */
+    --main-height: calc( 100% - calc(var(--header-height) + var(--footer-height)) );
 
     /* Horizontal Padding */
     --phone-horizontal-padding: 5%;
@@ -94,7 +89,6 @@
 @media (min-width : 767px) and (max-width : 1279px) {
     :root {
         --horizontal-padding : var(--tablet-horizontal-padding);
-        --main-height: var(--tablet-main-height);
     }
 }
 
@@ -102,7 +96,6 @@
 @media (min-width: 1280px) and (max-width: 1919px) {
     :root {
         --horizontal-padding : var(--laptop-horizontal-padding);
-        --main-height: var(--laptop-main-height);
     }
 }
 
@@ -110,6 +103,5 @@
 @media (min-width: 1920px) {
     :root {
         --horizontal-padding : var(--desktop-horizontal-padding);
-        --main-height: var(--desktop-main-height);
     }
 }

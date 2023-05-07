@@ -1,7 +1,6 @@
 /* Put here any 'jsonWizard.html' specific css */
 
 .json-wizard-category {
-    box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -20,7 +19,6 @@
     justify-content: flex-start;
 }
 .json-wizard-intro-area {
-    box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -31,7 +29,6 @@
     text-align: start;
 }
 .json-wizard-icon-area {
-    box-sizing: border-box;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -81,7 +78,6 @@
 }
 
 .export-textarea {
-    box-sizing: border-box;
     height: 100%;
     width: 100%;
     resize: none;

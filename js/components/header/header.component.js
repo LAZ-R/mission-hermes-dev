@@ -1,23 +1,52 @@
 import * as LAZR from '../../lazR/lazR.js';
-import * as BURGER_MENU from './burgerMenu/burgerMenu.component.js';
 
 export const renderView = () => {
     const header = document.getElementById('header');
 
-    const headerIndexLink = LAZR.DOM.createElement('a', '', 'header-index-link', '');
-    headerIndexLink.setAttribute('href', './');
+    const headerPreviousArea = LAZR.DOM.createElement(
+        'a', 
+        'headerPreviousArea',
+        'header-previous-area', 
+        '');
+    headerPreviousArea.setAttribute('href', './');
+    const headerPreviousIcon = LAZR.DOM.createRootVariableColoredSVGElement(
+        'headerPreviousIcon', 
+        'header-previous-icon', 
+        './medias/images/logo-white.svg', 
+        'Pointe de flèche vers la gauche', 
+        '--on-primary');
+    headerPreviousArea.appendChild(headerPreviousIcon);
+    header.appendChild(headerPreviousArea);
 
-    const headerLogo = LAZR.DOM.createImgElement('headerLogo', 'header-logo', './medias/images/logo-white.svg', 'lazr logo');
-    LAZR.CSS.applyColorFilterOnElement(headerLogo, LAZR.CSS.getCssRootVariableValue('--on-primary'));
-    
-    headerIndexLink.appendChild(headerLogo);
-    header.appendChild(headerIndexLink);
-    if (LAZR.BREAKPOINTS.isPhone || LAZR.BREAKPOINTS.isTablet) {
-        BURGER_MENU.renderView();
-    } else {
-        header.appendChild(
-            LAZR.DOM.createElement('div', 'headerLinksGroup', 'header-links-group', `
-                <a href="./" class="header-link">Home</a>
-            `));
-    }
+    const headerCenterArea = LAZR.DOM.createElement(
+        'div', 
+        'headerCenterArea', 
+        'header-center-area', 
+        '');
+    /* const headerLogo = LAZR.DOM.createRootVariableColoredSVGElement(
+        'headerLogo', 
+        'header-logo', 
+        './medias/images/logo-white.svg', 
+        'Logo texte indiquant "Mission Hermès" en police futuriste', 
+        '--on-primary');
+    headerCenterArea.appendChild(headerLogo); */
+
+    const headerTitle = LAZR.DOM.createElement('h1', 'headerTitle', 'header-title', 'Default');
+    headerCenterArea.appendChild(headerTitle);
+    header.appendChild(headerCenterArea);
+
+    const headerAboutArea = LAZR.DOM.createElement(
+        'a', 
+        'headerAboutArea', 
+        'header-about-area', 
+        '');
+    headerAboutArea.setAttribute('href', './?page=about');
+    const headerAboutIcon = LAZR.DOM.createRootVariableColoredSVGElement(
+        'headerAboutIcon', 
+        'header-about-icon', 
+        './medias/images/font-awsome/circle-info-solid.svg', 
+        'Logo texte indiquant "Mission Hermès" en police futuriste', 
+        '--on-primary');
+    headerAboutArea.appendChild(headerAboutIcon);
+    header.appendChild(headerAboutArea);
 }

@@ -26,7 +26,7 @@ window.handleCheck = handleCheck;
 const renderSettingsGroup = (settingsGroup) => {
     let str = `
     <div id="settingsGroup${settingsGroup.id}" class="settings-group">
-        <span class="settings-group-name">${settingsGroup.name}</span>`
+        <h2 class="settings-group-name">${settingsGroup.name}</h2>`
         
     settingsGroup.settings.forEach(setting => {
         str += `
@@ -48,16 +48,18 @@ const renderSettingsGroup = (settingsGroup) => {
 }
 
 export const renderPage = () => {
+    const pageTitle = 'Paramètres';
+    LAZR.DOM.setHTMLTitle(pageTitle);
+    document.getElementById('headerTitle').innerHTML = pageTitle;
 
-    LAZR.DOM.setHTMLTitle('Settings');
-
-    const page = LAZR.DOM.createElement('div', 'settingsPage', 'page', `
-        <h1 style="padding-left: var(--horizontal-padding)">Settings</h1>`);
+    const page = LAZR.DOM.createElement('div', 'settingsPage', 'page', ``);
     settings.forEach(settingsGroup => {
-        if ((settingsGroup.name == 'Advanced' && LAZR.STORAGE.isUserDev()) || settingsGroup.name != 'Advanced') {
+        if ((settingsGroup.name == 'Avancé' && LAZR.STORAGE.isUserDev()) || settingsGroup.name != 'Avancé') {
             page.appendChild(LAZR.DOM.getElementFromHTMLString(renderSettingsGroup(settingsGroup)));
         }
     });
+
+    document.getElementById('settingsIcon').classList.remove('unselected');
 
     return page;
 }

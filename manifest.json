@@ -1,5 +1,5 @@
 {
-  "name": "laz_R Template",
+  "name": "HERMÈS (dev)",
   "icons": [
     {
       "src": "./medias/app-maskable-icons/app_icon_144.png",
@@ -30,6 +30,6 @@
   "orientation": "portrait",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#007acc",
-  "theme_color": "#007acc"
+  "background_color": "#3a386e",
+  "theme_color": "#3a386e"
 }

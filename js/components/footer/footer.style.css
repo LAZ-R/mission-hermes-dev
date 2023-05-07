@@ -1,23 +1,34 @@
 /* Put here any 'footer' specific css */
 
 footer {
-    box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: var(--footer-height);
     min-width: 100%;
     margin: 0;
-    padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding);
+    padding: 0;
     background-color: var(--primary);
     color: var(--font-color-footer);
 }
 
-
-footer > a {
-    color: var(--font-color-footer);
-    padding-left: 4px;
+.footer__navigation-button {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%;
 }
+
+.navigation-button__icon {
+    height: 35%;
+}
+
+.unselected {
+    opacity: .25;
+}
+
 /* ==========================
  MEDIA QUERIES
 ========================== */
@@ -34,18 +45,11 @@ footer > a {
     :root {
         --footer-height: var(--laptop-footer-height);
     }
-    footer {
-        justify-content: flex-start;
-        font-size: 14px;
-    }
 }
 
 /* Desktops ----------- */
 @media (min-width: 1920px) {
     :root {
         --footer-height: var(--desktop-footer-height);
-    }
-    footer {
-        justify-content: flex-start;
     }
 }

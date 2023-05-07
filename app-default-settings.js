@@ -1,22 +1,22 @@
 export const DEFAULT_SETTINGS = [
     {
         id: 1,
-        name: 'Screen',
+        name: 'Écran',
         settings: [
             {
                 id: 'keepScreenAwake',
-                name: 'Keep screen awake',
+                name: 'Laisser l\'écran allumé',
                 isActive: true
             }
         ]
     },
     {
         id: 2,
-        name: 'Advanced',
+        name: 'Avancé',
         settings: [
             {
                 id: 'jsonWizard',
-                name: 'Enable JSON Wizard',
+                name: 'Activer le JSON Wizard',
                 isActive: false
             }
         ]

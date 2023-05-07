@@ -2,6 +2,12 @@ import * as LAZR from '../../../lazR/lazR.js';
 
 export const renderPage = () => {
 
+    const pageTitle = 'À propos';
+    LAZR.DOM.setHTMLTitle(pageTitle);
+    document.getElementById('headerTitle').innerHTML = pageTitle;
+    
+    document.querySelector(':root').style.setProperty('--phone-footer-height', '0%'); // Pas de footer
+
     const renderCreditsForIterations = (iterations) => {
         let str = '';
         for (let index = 0; index < iterations; index++) {
@@ -14,8 +20,6 @@ export const renderPage = () => {
         }
         return str;
     }
-
-    LAZR.DOM.setHTMLTitle('About');
 
     const gray80Filter = LAZR.CSS.getFilterStringForHexValue(LAZR.CSS.getCssRootVariableValue('--gray-80'));
 

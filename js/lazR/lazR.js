@@ -26,6 +26,7 @@ export const DOM = {
     getElementFromHTMLString: (html) => CORE_DOM.getElementFromHTMLString(html),
     createElement: (element, id, className, innerHtml) => CORE_DOM.createElement(element, id, className, innerHtml),
     createImgElement: (id, className, src, alt) => CORE_DOM.createImgElement(id, className, src, alt),
+    createRootVariableColoredSVGElement: (id, className, src, alt, rootColorVariableName) => CORE_DOM.createRootVariableColoredSVGElement(id, className, src, alt, rootColorVariableName),
 }
 /* Breakpoints */
 export const BREAKPOINTS = {

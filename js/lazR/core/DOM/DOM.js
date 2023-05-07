@@ -1,3 +1,4 @@
+import * as CSS from '../css/css.js'
 /* Breakpoints */
 const BREAKPOINTS = {
     PHONE_MAX_WIDTH: 767,
@@ -40,4 +41,10 @@ export const createElement = (element, id, className, innerHtml) => {
 
 export const createImgElement = (id, className, src, alt) => {
     return getElementFromHTMLString(`<img id="${id}" class="${className}" src="${src}" alt="${alt}">`)
+}
+
+export const createRootVariableColoredSVGElement = (id, className, src, alt, variableName) => {
+    const element =  getElementFromHTMLString(`<img id="${id}" class="${className}" src="${src}" alt="${alt}">`);
+    CSS.applyColorFilterOnElement(element, CSS.getCssRootVariableValue(variableName));
+    return element;
 }

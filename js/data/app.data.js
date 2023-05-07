@@ -1,4 +1,5 @@
-export const APP_NAME = "laz_R Template"
-export const APP_SHORT_NAME = "lzrtmplt"
-export const APP_VERSION_NUMBER = '0.0.10';
-// v 0.0.10 : début du passage en français + création app-default-settings + divers fix
+export const APP_NAME = "HERMÈS (dev)"
+export const APP_SHORT_NAME = "hrmsdev"
+export const APP_VERSION_NUMBER = '0.0.1';
+export const APP_COPYRIGHT = `&copy; ${new Date().getFullYear()} - v${APP_VERSION_NUMBER}`;
+// v 0.0.1 : mise en place

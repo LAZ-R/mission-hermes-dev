@@ -25,3 +25,27 @@
 /* Black */
 @font-face { font-family: "Roboto-Black"; src: url("../medias/fonts/roboto/Roboto-Black.ttf") format("truetype"); }
 @font-face { font-family: "Roboto-Black-Italic"; src: url("../medias/fonts/roboto/Roboto-BlackItalic.ttf") format("truetype"); }
+
+
+
+/* ==========================
+ ORBITRON
+===========================*/
+
+/* Regular */
+@font-face { font-family: "Orbitron-Regular"; src: url("../medias/fonts/orbitron/Orbitron-Regular.ttf") format("truetype"); }
+
+/* Medium */
+@font-face { font-family: "Orbitron-Medium"; src: url("../medias/fonts/orbitron/Orbitron-Medium.ttf") format("truetype"); }
+
+/* SemiBold */
+@font-face { font-family: "Orbitron-SemiBold"; src: url("../medias/fonts/orbitron/Orbitron-SemiBold.ttf") format("truetype"); }
+
+/* Bold */
+@font-face { font-family: "Orbitron-Bold"; src: url("../medias/fonts/orbitron/Orbitron-Bold.ttf") format("truetype"); }
+
+/* ExtraBold */
+@font-face { font-family: "Orbitron-ExtraBold"; src: url("../medias/fonts/orbitron/Orbitron-ExtraBold.ttf") format("truetype"); }
+
+/* Black */
+@font-face { font-family: "Orbitron-Black"; src: url("../medias/fonts/orbitron/Orbitron-Black.ttf") format("truetype"); }

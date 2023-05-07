@@ -1,28 +1,66 @@
 /* Put here any 'header' specific css */
 
 header {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: var(--header-height);
     min-width: 100%;
     margin: 0;
-    padding: 0 var(--horizontal-padding) 0 var(--horizontal-padding);
+    padding: 0;
     background-color: var(--primary);
     color: var(--font-color-header);
 }
 
-.header-index-link {
-    box-sizing: border-box;
+.header-previous-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    padding-left: var(--horizontal-padding);
+    height: 100%;
+    width: 15%;
+    background-color: var(--primary);
+}
+
+.header-previous-icon {
+    height: 40%;
+    opacity: 0;
+}
+
+.header-center-area {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 70%;
 }
 
 .header-logo {
-    height: 65%;
+    height: 50%;
+}
+
+.header-title {
+    font-family: 'Orbitron-Medium';
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-about-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-right: var(--horizontal-padding);
+    height: 100%;
+    width: 15%;
+    background-color: var(--primary);
+}
+
+.header-about-icon {
+    opacity: .25;
+    height: 40%;
 }
 
 /* ==========================
@@ -36,34 +74,7 @@ header {
     }
 }
 
-/* Laptops and up ----------- */
-
-.header-links-group {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100%;
-}
-.header-link {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 0 10% 0 10%;
-    border-bottom: none;
-    color: var(--font-color-header);
-}
-    .header-link:hover {
-        text-decoration: none;
-        background-color: var(--primary-hover);
-    }
-    .header-link:focus {
-        text-decoration: none;
-        background-color: var(--primary-hover);
-    }
-
+/* Laptops ----------- */
 
 @media (min-width : 1280px) and (max-width : 1919px) {
     :root {

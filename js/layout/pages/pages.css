@@ -6,7 +6,6 @@
 @import url("./settings/settings.style.css");
 
 .page {
-    box-sizing: border-box;
     margin: 0;
     display: flex;
     flex-direction: column;

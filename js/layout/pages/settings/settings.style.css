@@ -1,7 +1,6 @@
 /* Put here any 'settings.html' specific css */
 
 .settings-group {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,7 +9,6 @@
     height: fit-content;
     font-size: 18px;
     border-bottom: 2px solid var(--gray-20);
-    margin-top: 18px;
     margin-bottom: 12px;
 }
 .settings-group:last-child {
@@ -18,12 +16,12 @@
     border-bottom: none;
 }
 .settings-group-name {
-    font-family: 'Roboto-Bold';
+    font-family: 'Orbitron-Medium';
+    font-size: 20px;
     padding: 0 var(--horizontal-padding);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 .setting-tile {
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
